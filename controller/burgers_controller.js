@@ -16,16 +16,18 @@ router.get("/", function(req, res) {
 });
 
 router.post("/", function(req, res) {
+  console.log("req", req.body)
   burger.create([
     "burger_name", "devoured"
   ], [
-    req.body.burger_name, req.body.devoured
+    req.body.burger_name,0
   ], function() {
     res.redirect("/");
   });
 });
 
 router.put("/:id", function(req, res) {
+  console.log(req.body)
   var condition = "id = " + req.params.id;
 
   console.log("condition", condition);
