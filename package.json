@@ -1,5 +1,5 @@
 {
-  "name": "express",
+  "name": "burger",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/bshah111/Burger#readme",
   "dependencies": {
+    "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
     "method-override": "^3.0.0",
     "mysql": "^2.16.0"
